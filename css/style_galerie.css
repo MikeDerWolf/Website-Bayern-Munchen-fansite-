@@ -1,0 +1,216 @@
+main h2{
+	text-align: center;
+}
+
+#container_principal{
+	
+	border: 2px solid black;
+	width: 50vw;
+	height: 27vw;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+#container_radio{
+	
+	border: 2px solid black;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+#line{
+  background:rgb(220,5,46);
+  width:65px; height:10px;
+  position: absolute;
+  top:218px; left:10px;
+  border-radius:10px;
+}
+
+#box{
+  background:rgb(5,100,172);
+  width:30px; height:25px;
+  position: absolute;
+  top:203px; left:10px;
+  border-radius:10px;
+}
+
+#play_btn{
+	font-size: 1.1rem;
+	color: white;
+	padding: 3px;
+	background: rgb(220,5,46);
+	border-radius: 4px;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+#container_principal img{
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	float: left;
+	padding: 0.4em 0.4em;  
+	width: 32%;
+}
+
+div.tablou {
+	border: 2px solid black;
+	background: rgb(220,5,46);
+}
+
+div.tablou img {
+	width: 100%;
+	height: auto;
+}
+
+div.tablou video {
+	width: 100%;
+	height: auto;
+}
+
+div.text{
+	padding: 0.5em;
+	text-align: center;
+	color: white;
+	font-size: 1em;
+	font-family: candara;
+}
+
+div.desc{
+	padding: 0.5em;
+	text-align: center;
+	color: yellow;
+	font-size: 1em;
+	font-family: candara;
+}
+
+div.rate{
+	padding: 0.5em;
+	text-align: center;
+	font-size: 1em;
+	font-family: candara;
+}
+
+div.rate button{
+	padding: 0.5em;
+	text-align: center;
+	color: white;
+	background: rgb(5,100,172);
+	border-radius: 5px;
+	margin-left: 1vw;
+}
+
+div.fav{
+	padding: 0.5em;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	font-family: candara;
+}
+
+div.fav input{
+	padding: 0.5em;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+main label{
+	display: block;
+}
+
+#lab_select{
+	font-family: candara;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: rgb(100, 2, 20);
+}
+
+#select_categorie{
+	font-family: candara;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	background: rgb(5,100,172);
+	color: white;
+}
+
+#lab_caut_titlu{
+	font-family: candara;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: rgb(100, 2, 20);
+}
+
+#text_search{
+	font-family: candara;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	background: rgb(5,100,172);
+	color: white;
+}
+
+#lab_caut_desc{
+	font-family: candara;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: rgb(100, 2, 20);
+}
+
+#desc_search{
+	font-family: candara;
+	font-weight: bold;
+	font-size: 1.2rem;
+	background-color: rgb(5,100,172);
+	color: white;
+}
+
+div.afis_rate{
+	display: inline;
+	margin: 1em;
+	color: white;
+	font-size: 1.2em;
+}
+
+.imagini{
+	display: block;
+}
+
+.videoclipuri{
+	display: none;
+}
+
+.favorite{
+	display: none;
+}
+
+@media only screen and (max-width: 1066px){
+	.container {
+	float: left;
+	padding: 0.4em 0.4em;  
+	width: 48%;
+	}
+}
+
+@media only screen and (max-width: 622px){
+	.container {
+	float: left;
+	padding: 0.4em 0.4em;  
+	width: 100%;
+	}
+}

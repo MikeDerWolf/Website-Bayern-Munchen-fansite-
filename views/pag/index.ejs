@@ -1,0 +1,65 @@
+<!-- views/pag/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Home - FC Bayern München</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://fcbfl.li/wp-content/uploads/2018/12/favicon.png">
+		<link rel="stylesheet" type="text/css" href="../css/style_general.css">
+		<link rel="stylesheet" type="text/css" href="../css/style_index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="UTF-8">
+		<meta name="author" content="Mihai - Răzvan Lupu">
+		<meta name="description" content="Această pagină este un fan-site din România dedicat echipei de fotbal germane FC Bayern München. În pagina Home se pot găsi informații generale precum poreclă, imn, președinte, scurtă prezentare, rivalități cu echipe precum Borussia Dortmund">
+		<meta name="keywords" content="Bayern, München, Mia San Mia, FC, Bundesliga, Fan-site, Fußball-Club, Der FCB, Die Roten, Allianz Arena, Stern des Südens">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../scripts/js_general.js"></script>
+	</head>
+	<body>
+		<header>
+			<%- include("../frg/header")%>
+		</header>
+		<main>
+			<img src="../media/bundesliga.jpg" width="280" height="180" alt="Logo Bundesliga" title="Emblema oficială Bundesliga">
+			<img src="../media/team_victory.jpg" width="300" height="180" alt="Jucători Bayern" title="Jucători în echipa FC Bayern München">
+			<section>
+				<h2>Informații generale</h2>
+				<dl>
+					<dt>Abreviere:</dt>
+					<dd><abbr title="FC Bayern">FCB</abbr></dd>
+					<dt>Poreclă:</dt>
+					<dd>Der FCB / Die Bayern (Bavarezii) / Die Roten (Cei roșii)</dd>
+					<dt>Data fondării:</dt>
+					<dd><time datetime="1900-02-27">27 februarie 1900</time></dd>
+					<dt>Culori:</dt>
+					<dd>ROȘU, ALB</dd>
+					<dt>Stadion:</dt>
+					<dd>Allianz Arena</dd>
+					<dt>Campionat:</dt>
+					<dd><b>Bundesliga</b></dd>
+					<dt>Președinte:</dt>
+					<dd>Uli Hoeneß</dd>
+					<dt>Imn:</dt>
+					<dd>Stern des Südens</dd>
+				</dl>
+				<audio controls>
+					<source src="../media/Bayern_imn.mp3" type="audio/mpeg">
+				</audio>
+			</section>
+	
+			<section>
+				<h2>Scurtă prezentare</h2>
+				<p>Fußball-Club Bayern München, cunoscut ca FC Bayern München, FCB, sau Bayern, este un club de fotbal din München, Germania, care evoluează în Bundesliga. Datorită celor 14 trofee europene, dar și celor 54 de trofee naționale câștigate de-a lungul timpului, Bayern reprezintă cel mai important club german și unul dintre cele mai de succes cluburi de fotbal.</p>
+				<p>Echipa a fost fondată în 1900 de membrii unui club de gimnastică din München. În 1932 a câștigat primul campionat german, învingând Eintracht Frankfurt cu 2-0 în finală. După Al Doilea Război Mondial a promovat în prima divizie (Oberliga Süd). După o retrogradare și o nouă promovare, Bayern München a câștigat Cupa Germaniei, învingând-o cu 1-0 pe Fortuna Düsseldorf. După această victorie, echipa a intrat în perioada de aur, la care au participat Franz Beckenbauer, Gerd Müller și Sepp Maier. Franz Beckenbauer și-a făcut debutul în Regionalliga Süd și a câștigat primul meci cu FC St. Pauli la 6 iunie 1964. În anul următor, acesta a promovat cu echipa în prima ligă și a câștigat atât Cupa Germaniei, cât și mai multe trofee europene.</p>
+				<p>Bayern este singura echipa germană de până acum care a câștigat toate trofeele importante (Campionatul Germaniei, Cupa Germaniei, Campionatul Mondial al Cluburilor și Liga Campionilor, Cupa Cupelor).</p>
+			</section>
+			<section>
+				<h2>Rivalitate</h2>
+				<p>Principala rivală a acestei echipe este Borussia Dortmund. Bayern și Dortmund s-au luptat pentru multe titluri în Bundesliga. Cele două echipe au jucat una împotriva celeilalte în 3 finale din DFB-Pokal din 2008, 2012 și 2014. Bayern și Dortmund au jucat de asemenea și în DFL-Supercup în 1989, 2008, 2012, 2013 și 2014. Apogeul rivalității a fost când Bayern a învins-o pe Dortmund cu scorul de 2-1 în finala UEFA Champions Leauge 2012-2013.</p>
+			</section>
+		</main>
+		<footer>
+			<%- include("../frg/footer")%>
+		</footer>
+	</body>
+</html>

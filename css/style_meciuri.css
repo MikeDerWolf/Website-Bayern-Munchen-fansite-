@@ -1,0 +1,135 @@
+div#btn_container{
+	text-align: center;
+	display: inline-block;
+	line-height: 3em;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	
+}
+
+div#btn_container a{
+	width: 100%;
+	height: 100%;
+	line-height: 3em;
+	box-sizing: border-box;
+	display: block;
+	padding:0 1em;
+	background: rgb(220,5,46);
+	text-decoration: none;
+	font-family: candara;
+	font-weight: bold;
+	font-size: 1em;
+	color: white;
+	border-radius: 8px;
+	transition: background 0.3s, transform 1s;
+}
+
+div#btn_container a:hover{
+	background: rgb(100, 2, 20);
+	transform: scale(1.5, 1.5);
+}
+
+table#tab_meciuri{
+	font-size: 1.2em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	border: 1px solid black;
+	text-align: left;
+}
+
+table#tab_meciuri tbody{
+	background: rgb(232, 234, 237);
+}
+
+table#tab_meciuri thead{
+	background: rgb(195, 220, 255);
+	font-weight: bold;
+}
+table#tab_meciuri tbody td:nth-child(1){
+	color: rgb(5,100,172);
+}
+
+table#tab_meciuri tbody td:nth-child(2){
+	color: rgb(162, 0, 173);
+}
+
+table#tab_meciuri tbody td:nth-child(3){
+	color: rgb(150, 2, 20);
+}
+
+table#tab_meciuri td, table#tab_meciuri th{
+	border: 1px solid black;
+	padding: 1em;
+}
+
+table#tab_meciuri{
+	border-spacing:0;
+	border-collapse:separate;
+	box-sizing:border-box;
+}
+
+@media screen and (max-width:510px){
+	table#tab_meciuri, table#tab_meciuri tr{
+		border:none;
+
+		display:block;
+	}
+		
+	table#tab_meciuri td{
+		display:block;
+		padding:0.2em;
+		box-sizing:border-box; 
+	}
+
+	table#tab_meciuri thead{
+		display:none;
+	}
+	
+	table#tab_meciuri tbody td:nth-child(1)::before{
+		content:"Data: ";
+	}
+		
+	table#tab_meciuri tbody td:nth-child(2)::before{
+		content:"Tipul meciului: ";
+	}
+	
+	table#tab_meciuri tbody td:nth-child(3)::before{
+		content:"Adversar: ";
+	}
+	
+	table#tab_meciuri td{
+		border-bottom:none;
+		border-top:none;
+		float:left;
+		width:100%;
+		padding-left:2%;
+		padding-right:2%;
+	}
+
+	table#tab_meciuri td::before{
+		float:left;
+		width:35%;
+		background:rgb(195, 220, 255);
+		font-weight:bold;
+		margin-right:0.5em;
+		padding:0.1em;
+		line-height:100%;
+	}
+	
+	table#tab_meciuri td:last-child{
+		border-bottom:1px solid black;
+		}
+	
+	table#tab_meciuri tr:first-child  td:first-child{
+		border-top:1px solid black;
+	}
+	
+	table#tab_meciuri tr:last-child td:last-child{
+		border-bottom:1px solid black;
+		}
+}

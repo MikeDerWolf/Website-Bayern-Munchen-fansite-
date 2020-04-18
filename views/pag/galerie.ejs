@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Galerie - FC Bayern München</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://fcbfl.li/wp-content/uploads/2018/12/favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="../css/style_general.css">
+		<link rel="stylesheet" type="text/css" href="../css/style_galerie.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="UTF-8">
+		<meta name="author" content="Mihai - Răzvan Lupu">
+		<meta name="description" content="Această pagină este un fan-site din România dedicat echipei de fotbal germane FC Bayern München. În pagina Galerie se pot vedea imagini cu cele mai bune momente ale clubului, care prezintă jucători precum Lewandowski, Neuer, Boateng, Gnabry, etc.">
+		<meta name="keywords" content="Bayern, München, Mia San Mia, FC, Bundesliga, Fan-site, Galerie, Bine ați venit,  Lewandowski, Boateng, Best taunt, Coutinho">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="../scripts/js_general.js"></script>
+		<% if(locals.user){ %>
+			<script type="text/javascript" src="../scripts/js_galerie_login.js"></script>
+		<% } %>
+		<script type="text/javascript" src="../scripts/js_galerie.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<%- include("../frg/header")%>
+		</header>
+		<main>
+			<h1>Galerie</h1>
+			<div id="container_animatie">
+				<div id="line"></div>
+				<div id="box"></div>
+			</div>
+			<h2>Bine ați venit în galeria FC Bayern München! Iată câteva dintre cele mai bune momente ale clubului!</h2>
+			
+			<div class="imagini">
+			
+			<button type="button" id="play_btn">Autoplay</button>
+			
+			<div id="container_principal">
+				<img id="img_container" src="" alt="Click pe orice imagine din galerie">
+			</div>
+			
+			<div id="container_radio">
+				<input type="radio" name="marime" id="mic" >Mic<br>
+				<input type="radio" name="marime" id="mediu" checked="true">Mediu<br>
+				<input type="radio" name="marime" id="mare">Mare
+			</div>
+				
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal1.jpg" alt="Galerie Bayern 1" title="Lewandowski salvând o minge dificilă">
+					<div class="text">Lewandowski salvând o minge dificilă</div>
+					<div class="desc">Lewandowski uimeste lumea reusind sa recupereze o minge printr-o manevra incredibila.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal2.jpg" alt="Galerie Bayern 2" title="Gnabry marcând">
+					<div class="text">Gnabry marcând</div>
+					<div class="desc">Unul dintre jucatorii de top de la Bayern, Gnabry este intotdeauna plin de surprize.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal3.jpg" alt="Galerie Bayern 3" title="Boateng se luptă pentru minge">
+					<div class="text">Boateng se luptă pentru minge</div>
+					<div class="desc">Prin fizicul sau, Boateng reuseste sa se impuna in duelurile pentru balon.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal4.jpg" alt="Galerie Bayern 4" title="Neuer - best goalkeeper">
+					<div class="text">Neuer - best goalkeeper</div>
+					<div class="desc">Neuer. Capitanul echipei si unul dintre cei mai buni portari la nivel mondial. Nimic de adaugat.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal5.jpg" alt="Galerie Bayern 5" title="Beautiful team!">
+					<div class="text">Beautiful team!</div>
+					<div class="desc">Desi fiecare jucator reprezinta o forta pe cont propriu, adevarata valoare se afla in echipa.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal6.jpg" alt="Galerie Bayern 6" title="Fans - the most important!">
+					<div class="text">Fans - the most important!</div>
+					<div class="desc">In cele din urma, cei care definesc clubul si sustin echipa pana la capat sunt chiar fanii.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal7.jpg" alt="Galerie Bayern 7" title="Coutinho în acțiune">
+					<div class="text">Coutinho în acțiune</div>
+					<div class="desc">Proaspat venit de la Barcelona, Coutinho doreste sa se afirme si sa obtina performante pentru Bayern.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal8.jpg" alt="Galerie Bayern 8" title="Lewandowski - numărul 1">
+					<div class="text">Lewandowski - numărul 1</div>
+					<div class="desc">Cel mai bun atacant din Bundesliga la ora actuala. Cine stie ce surprize mai poate aduce?</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal9.jpg" alt="Galerie Bayern 9" title="Muncind din greu">
+					<div class="text">Muncind din greu</div>
+					<div class="desc">Pentru a ramane in varful clasamentului, echipa trebuie sa se antreneze constant.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal10.jpg" alt="Galerie Bayern 10" title="Best taunt">
+					<div class="text">Best taunt</div>
+					<div class="desc">Unul dintre cele mai amuzante taunt-uri, gatitul lui Gnabry va ramane memorabil.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal11.jpg" alt="Galerie Bayern 11" title="Mistakes we've made">
+					<div class="text">Mistakes we've made</div>
+					<div class="desc">Desi sunt una dintre cele mai bune echipe, mereu exista ghinionul de a primi goluri.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<img src="../media/gal12.jpg" alt="Galerie Bayern 12" title="All about that feeling">
+					<div class="text">All about that feeling</div>
+					<div class="desc">In fotbal, nu doar banii conteaza. Este vorba despre de sentimentele pe care acest sport le ofera.</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			
+			</div>
+			
+			<div class="videoclipuri">
+			
+			<div class="container">
+				<div class="tablou">
+					<video controls><source src="../media/lewa_5goals.mp4" type="video/mp4"></video>
+					<div class="text">Lewandowski - 5 goals in 9 minutes</div>
+					<div class="desc">Acesta este meciul istoric in care Lewandowski a reusit sa marcheze 5 goluri in 9 minute impotriva celor de la Wolfsburg.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<video controls><source src="../media/neuer_skills.mp4" type="video/mp4"></video>
+					<div class="text">Neuer - best skills</div>
+					<div class="desc">Manuel Neuer este considerat un portar din clasa superioara. Acest video este singura dovada de care ai nevoie.</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tablou">
+					<video controls><source src="../media/coutinho_hat_trick.mp4" type="video/mp4"></video>
+					<div class="text">Coutinho - amazing hat-trick</div>
+					<div class="desc">Dupa cateva meciuri in care nu a dat prea multe rezultate, Coutinho se afirma cu un hat-trick superb.</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			
+			</div>
+			
+			<div class="favorite">
+			
+			
+			<div class="clearfix"></div>
+			
+			</div>
+			
+			
+		</main>
+		<footer>
+			<%- include("../frg/footer")%>
+		</footer>
+	</body>
+</html>

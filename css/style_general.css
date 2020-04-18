@@ -1,0 +1,427 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background-image: url(../media/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+main{
+	padding-top: 9em;
+	z-index:-1;
+	padding-left:5%;
+	padding-right:5%;
+	margin-bottom: 5em;
+	text-align: justify;
+	font-size: 16px;
+}
+
+footer{
+	padding-left:5%;
+	padding-right:5%;
+	color: rgb(220,5,46);
+	text-align: justify;
+	font-size: 16px;
+}
+
+main h1{
+	margin-bottom: 0.9em;
+	margin-top: 0.5em;
+	font-size: 2.2em;
+	font-family: "georgia";
+	font-weight: bold;
+	color: rgb(100, 2, 20);
+	text-align: center;
+	text-decoration: underline overline;
+}
+
+main h2{
+	margin-bottom: 0.8em;
+	margin-top: 0.8em;
+	font-size: 1.8em;
+	font-family: "georgia";
+	font-weight: bold;
+	color: rgb(5,100,172);
+	text-decoration: underline;
+}
+
+main p, footer p{
+	margin-bottom: 0.4em;
+	font-size: 1.2em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-indent: 2.5em;
+}
+
+footer p#top_btn{
+	font-weight: bold;
+	text-indent: 0;
+	text-align: center;
+}
+
+div.menu_container{
+	height: 100px;
+	width: 100%;
+	background-color: rgb(220,5,46);
+	position: fixed;
+	z-index:9999;
+}
+
+div#menu_toggle{
+	display: none;
+}
+
+#submenu_drop_icon{
+	display: none;
+}
+
+header h1#titlu1 a{
+	position: absolute;
+	top: 7%;
+	left: 1.5vw;
+	color: white; 
+	font-size: 2.5rem; 
+	font-family: candara;
+	text-decoration: none;
+}
+
+header h1#titlu2 a{
+	display: none;
+}
+
+header p{
+	position: absolute;
+	color: rgb(5,100,172);
+	left: 75px; 
+	top: 60%;
+	font-size: 1.06rem;
+	font-family: "MV Boli";
+}
+
+p#user_sal{
+	font-family: candara;
+	font-size: 1.1rem;
+	position: relative;
+	left: 0;
+	top: 100%;
+	padding-left: 20px;
+	padding-top: 0.2vw;
+	padding-bottom: 0.2vw;
+	background-color: rgb(5,100,172);
+	border-bottom-right-radius:17px;
+	border-bottom-left-radius:17px;
+	z-index:-1;
+	color: white;
+	width: 260px;
+	height: 23px;
+	display: block;
+}
+
+input#logout_btn{
+	position: absolute;
+	right: 12px;
+	top: auto;
+	bottom: auto;
+	color: white;
+	font-family: candara;
+	font-size: 0.9rem;
+	background: rgb(220,5,46);
+	border-radius: 5px;
+}
+
+div#form_container{
+	font-family: candara;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: rgb(5,100,172);
+	border-bottom-right-radius:17px;
+	border-bottom-left-radius:17px;
+	z-index:-1;
+}
+
+form#login{
+	margin-left: 1.3vw;
+	margin-right: 1.9vw;
+	margin-bottom: 0.3vw;
+	margin-top: 0.2vw;
+	color: white;
+	font-size: 1.1rem;
+}
+
+input#submit_login{
+	color: white;
+	font-family: candara;
+	font-size: 0.9rem;
+	background: rgb(220,5,46);
+	border-radius: 5px;
+}
+
+img.logo{
+	position: absolute;
+	width: 80px;
+	height: 80px; 
+	right: 1.5vw;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+ul.menu{
+	position: absolute;
+	right: 120px;
+	top: 60%;
+	list-style-type: none;
+	
+}
+
+ul.menu>li{
+	position: relative;
+	display: inline-block;
+	float: left;
+	font-size: 1.2rem;
+	font-family: candara;
+	font-weight: bold;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+ul.submenu{
+	position: absolute;
+	list-style-type: none;
+	display: none;
+}
+
+ul.submenu>li{
+	
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+ul.menu>li>a, ul.submenu>li>a{
+	background-color: rgb(220,5,46);
+	display: block;
+	box-sizing: border-box;
+	height:	100%;
+	width: 100%;
+	padding: 0 1.1vw;
+	text-decoration: none;
+	color: white;
+	transition: background-color 0.3s;
+	}
+
+ul.menu>li:hover ul.submenu{
+	display: block;
+}
+
+ul.menu>li>a:hover, ul.submenu>li>a:hover{
+	background-color: rgb(100, 2, 20);
+}
+
+@media screen and (max-width:1024px){
+	div.menu_container{
+	height: 80px;
+	}
+	
+	main{
+	padding-top: 8em;
+	margin-bottom: 3.5em;
+	font-size: 14px;
+	}
+	
+	footer{
+	font-size: 14px;
+	}
+	
+	header h1#titlu1 a{
+	font-size: 1.8rem;
+	left: 11.5%;
+	}
+	
+	header p{
+	display: none;
+	}
+	
+	p#user_sal{
+	font-size: 1rem;
+	}
+	
+	form#login{
+	font-size: 1rem;
+	}
+
+	input#submit_login{
+	font-size: 0.8rem;
+	}
+	
+	img.logo{
+	width: 60px;
+	height: 60px; 
+	right: 2vw;
+	}
+	
+	ul.menu{
+	position: absolute;
+	left: 0px;
+	top: 56%;
+	}
+	
+	ul.menu>li{
+	font-size: 0.84rem;
+	line-height: 2.2rem;
+	}
+	
+	ul.submenu>li{
+	line-height: 2.2rem;
+	}
+	
+	ul.submenu.visible{
+	display: block;
+	z-index:999;
+	right: 0;
+	left: 0;
+	position: relative;
+	}
+	
+	ul.menu>li:hover ul.submenu{
+	display: none;
+	}
+	
+	ul.menu>li:hover ul.submenu.visible{
+	display: block;
+	}
+	
+	ul.menu>li#submenu_toggle>a{
+		pointer-events: none;
+	}
+}
+
+@media screen and (max-width:510px){
+	div.menu_container{
+	height: 65px;
+	}
+	
+	main{
+	padding-top: 9em;
+	margin-bottom: 2em;
+	font-size: 12px;
+	}
+	
+	footer{
+	font-size: 12px;
+	}
+	
+	div#menu_toggle{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	color: white;
+	font-size: 1.8rem;
+	}
+	
+	#submenu_drop_icon{
+	display: inline-block;
+	padding-left: 10px;
+	}
+	
+	header h1#titlu1 a{
+	display: none;
+	}
+	
+	header h1#titlu2 a{
+	display: inline;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 65px;
+	color: white; 
+	font-size: 1.8rem; 
+	font-family: candara;
+	text-decoration: none;
+	}
+	
+	div#form_container{
+	width: 100%;
+	padding-left: 1vw;
+	}
+	
+	form#login{
+	position: relative;
+	}
+	
+	label#lbl1, label#lbl2{
+	display: block;
+	}
+	
+	input[type=password]{
+		margin-left: 26.5px;
+	}
+	
+	input#submit_login{
+	position: absolute;
+	right: 3px;
+	top: 25%;
+	}
+	
+	img.logo{
+	width: 50px;
+	height: 50px; 
+	left: 2vw;
+	}
+
+	ul.menu{
+	display: none;
+	top: 100%;
+	right:0;
+	left:0;
+	}
+	
+	ul.menu.visible{
+	display: block;
+	top: 100%;
+	right:0;
+	left:0;
+	}
+	
+	ul.menu>li{
+	display: block;
+	float: none;
+	font-size: 1rem;
+	line-height: 3rem;
+	border-top: 1px solid black;
+	}
+	
+	ul.submenu{
+	z-index:999;
+	right: 0;
+	left: 0;
+	position: relative;
+	}
+	
+
+	ul.submenu>li{
+	
+	line-height: 3rem;
+	text-align: center;
+	border-top: 1px solid black;
+	}
+
+	ul.submenu>li>a{
+	background-color: rgb(5,100,172);
+	}	
+	
+	ul.submenu>li>a:hover{
+	background-color: rgb(2, 40, 75);
+	}
+	
+	ul.menu>li:hover ul.submenu{
+	display: none;
+	}
+	
+	ul.menu>li#submenu_toggle>a{
+		pointer-events: none;
+	}
+}

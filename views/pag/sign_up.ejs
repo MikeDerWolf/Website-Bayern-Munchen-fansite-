@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Sign up - FC Bayern München</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://fcbfl.li/wp-content/uploads/2018/12/favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="../css/style_general.css">
+		<link rel="stylesheet" type="text/css" href="../css/style_sign_up.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="UTF-8">
+		<meta name="author" content="Mihai - Răzvan Lupu">
+		<meta name="description" content="Această pagină este un fan-site din România dedicat echipei de fotbal germane FC Bayern München. În pagina Sign up utilizatorul isi poate crea un cont nou pentru a interactiona mai bine cu site-ul.">
+		<meta name="keywords" content="Bayern, München, Mia San Mia, FC, Bundesliga, Sign up, Username, Parola">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../scripts/js_general.js"></script>
+	</head>
+	<body>
+		<header>
+			<%- include("../frg/header_sign_up")%>
+		</header>
+		<main>
+			<h1>Sign up</h1>
+		<div id="inreg_form_container">
+			<% if(!locals.rsstatus) { %>
+		<form method="post" id="inreg_form">
+			
+			<label>
+				Nume: <input type="text" name="nume" value="">
+			</label>
+			
+			<label>
+				Prenume: <input type="text" name="prenume" value="">
+			</label>
+			
+			<label>
+				Username: <input type="text" name="username" value="">
+			</label>
+			
+			<label>
+				Parola: <input type="password" name="parola" value="">
+			</label>
+			
+			<label>
+				<input id="inreg_submit" type="submit" value="   Submit   ">
+			</label>
+			
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Inregistrare efectuata!</p>
+		<% } else {%>
+			<p>Inregistrare esuata!</p>
+		<% } %>
+		</div>
+		</main>
+		<footer>
+			<%- include("../frg/footer")%>
+		</footer>
+	</body>
+</html>

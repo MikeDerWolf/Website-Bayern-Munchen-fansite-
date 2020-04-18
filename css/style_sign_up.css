@@ -1,0 +1,27 @@
+form#inreg_form label{
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+div#inreg_form_container{
+	font-family: candara;
+	font-weight: bold;
+	font-size: 1.3rem;
+	color: rgb(100, 2, 20);
+	border: 2px solid rgb(5, 100,172);
+	border-radius:17px;
+	text-align: center;
+}
+
+input#inreg_submit{
+
+	font-weight: bold;
+	font-family: candara;
+	font-size: 1.2rem;
+	background: rgb(220,5,46);
+	border-radius: 5px;
+
+}
